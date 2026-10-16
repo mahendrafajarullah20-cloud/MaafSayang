@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaf Ya, Febriana Agustin ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Floating Background Hearts -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <!-- Music Control Floating Button -->
+  <button id="musicBtn" class="music-btn" title="Putar Musik">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <main class="container">
+    <!-- Header Badge -->
+    <div class="badge">Spesial untuk Febriana Agustin 🌸</div>
+
+    <!-- Cute Bear Illustration -->
+    <div class="bear-wrapper">
+      <svg id="bearSvg" viewBox="0 0 200 200" class="bear-svg">
+        <!-- Ears -->
+        <circle cx="55" cy="55" r="22" fill="#E2A970"/>
+        <circle cx="55" cy="55" r="13" fill="#FFC0CB"/>
+        <circle cx="145" cy="55" r="22" fill="#E2A970"/>
+        <circle cx="145" cy="55" r="13" fill="#FFC0CB"/>
+        <!-- Head -->
+        <circle cx="100" cy="100" r="60" fill="#F4C28C"/>
+        <!-- Eyes -->
+        <circle cx="80" cy="90" r="6" fill="#333"/>
+        <circle cx="120" cy="90" r="6" fill="#333"/>
+        <circle cx="82" cy="88" r="2" fill="#FFF"/>
+        <circle cx="122" cy="88" r="2" fill="#FFF"/>
+        <!-- Cheeks -->
+        <circle cx="70" cy="105" r="10" fill="#FFB6C1" opacity="0.7"/>
+        <circle cx="130" cy="105" r="10" fill="#FFB6C1" opacity="0.7"/>
+        <!-- Snout & Nose -->
+        <ellipse cx="100" cy="105" rx="16" ry="12" fill="#FFF"/>
+        <polygon points="100,98 94,105 106,105" fill="#5D4037"/>
+        <!-- Mouth Sad (Default) -->
+        <path id="bearMouth" d="M 92 114 Q 100 108 108 114" stroke="#5D4037" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- Tear -->
+        <path id="bearTear" d="M 72 95 Q 70 105 72 110 Q 75 105 72 95" fill="#4FC3F7" class="sad-tear"/>
+        <!-- Paws -->
+        <circle cx="65" cy="148" r="14" fill="#E2A970"/>
+        <circle cx="135" cy="148" r="14" fill="#E2A970"/>
+      </svg>
+    </div>
+
+    <h1 id="mainTitle" class="title">Maafin Mahendra ya, Febriana... 🥺</h1>
+    <p id="subTitle" class="subtitle">Mahendra janji nggak bakal bikin Febriana kesel lagi. Muka beruang di atas aja udah merasa bersalah banget tuh!</p>
+
+    <!-- Interactive Buttons -->
+    <div id="btnGroup" class="button-group">
+      <button id="yesBtn" class="btn btn-yes">Maafin Banget! 💕</button>
+      <button id="noBtn" class="btn btn-no">Enggak Dulu! 😜</button>
+    </div>
+
+    <!-- Love Letter Container -->
+    <div class="letter-section">
+      <div id="envelope" class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-paper">
+          <h3>Surat Penyesalan Mahendra 💌</h3>
+          <p>
+            Halo Febriana Agustin tersayang ❤️,<br><br>
+            Mahendra minta maaf ya kalau udah bikin kamu kesel, sedih, atau bete. Nggak ada niat sedikit pun buat bikin suasana hati kamu buruk.<br><br>
+            Makasih ya udah selalu sabar menghadapi Mahendra. Senyum kamu itu hal paling berharga! Senyum lagi dong sekarang? 😊
+          </p>
+        </div>
+        <div class="envelope-front">
+          <span>Klik Amplop untuk Buka Surat 💌</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coupon Section -->
+    <div class="coupons-container">
+      <h3>🎟️ Kupon Permintaan Maaf Khusus Febriana</h3>
+      <p class="coupon-desc">Bisa di-claim kapan aja ke Mahendra!</p>
+      <div class="coupons-grid">
+        <div class="coupon-card" onclick="claimCoupon(this)">
+          <div class="coupon-icon">🍲</div>
+          <div class="coupon-title">Makan Seblak / Food Date</div>
+          <button class="claim-btn">Klaim</button>
+        </div>
+        <div class="coupon-card" onclick="claimCoupon(this)">
+          <div class="coupon-icon">🧋</div>
+          <div class="coupon-title">Boba / Drink Favorit</div>
+          <button class="claim-btn">Klaim</button>
+        </div>
+        <div class="coupon-card" onclick="claimCoupon(this)">
+          <div class="coupon-icon">🤗</div>
+          <div class="coupon-title">Pelukan Kencang</div>
+          <button class="claim-btn">Klaim</button>
+        </div>
+        <div class="coupon-card" onclick="claimCoupon(this)">
+          <div class="coupon-icon">👑</div>
+          <div class="coupon-title">Diturutin Kemauannya 1 Hari</div>
+          <button class="claim-btn">Klaim</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Dibuat dengan segenap rasa cinta oleh <strong>Mahendra Fajarullah</strong> untuk <strong>Febriana Agustin</strong> 💕
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
